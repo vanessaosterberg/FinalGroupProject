@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\image",
+    "\\Images",
+    "\\JavaScript",
+    "\\Styling"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\Images\\key-icon.png",
   "PreviewInSolutionExplorer": false
 }

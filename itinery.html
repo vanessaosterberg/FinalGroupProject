@@ -17,6 +17,13 @@
                 padding-bottom: 7.5rem;
             }
         }
+
+        .vl {
+            border-left: 1px solid #D9D9D9;
+            height: 100px;
+            margin-left: -10px;
+            margin-right: 40px;
+        }
     </style>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -27,7 +34,7 @@
 </head>
 <body>
 
-    <div class="container-fluid" style="height:100vh">
+    <div class="container-fluid">
         <nav class="bg-primaryX text-lightX navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
 
             <div class="container">
@@ -90,65 +97,157 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5">
-                        <div class="card">
+                        <div class="card" style="margin-bottom: 10px">
                             <div class="card-body">
-                                <h1 class="h3">Book homes, hotels, and more on Airbnb</h1>
-                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="locationInput">WHERE</label>
-                                        <input type="email" class="form-control" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
-                                        <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
-                                        <div class="container">
-                                            Start Date: <input id="startDate" width="276" />
-                                            End Date: <input id="endDate" width="276" />
-                                        </div>
+                                <div class="row">
+                                    <img src="/images/airbnb-house.jpg" class="card-img-top" style="margin-bottom: 10px"/>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="card-text">Check-In</p>
+                                        <h5><b>Thu, Jan 12</b></h5>
+                                        <p class="card-text">4:00 PM</p>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">ADULTS</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>1 adult</option>
-                                                    <option>2 adults</option>
-                                                    <option>3 adults</option>
-                                                    <option>4 adults</option>
-                                                    <option>5 adults</option>
-                                                    <option>6 adults</option>
-                                                    <option>7 adults</option>
-                                                    <option>8 adults</option>
-                                                    <option>9 adults</option>
-                                                    <option>10 adults</option>
-                                                    <option>11 adults</option>
-                                                    <option>12 adults</option>
-                                                    <option>13 adults</option>
-                                                    <option>14 adults</option>
-                                                    <option>15 adults</option>
-                                                    <option>16 adults</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">CHILDREN</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>0 children</option>
-                                                    <option>1 child</option>
-                                                    <option>2 children</option>
-                                                    <option>3 children</option>
-                                                    <option>4 children</option>
-                                                    <option>5 children</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                    <div class="vl"></div>
+                                    <div class="col-sm-5">
+                                        <p class="card-text">Checkout</p>
+                                        <h5><b>Fri, Jan 13</b></h5>
+                                        <p class="card-text">10:00 AM</p>
                                     </div>
-
-                                </form>
-                                <a href="#" class="btn btn-danger btn-block">Search</a>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row" style="background: #D9D9D9">
+                                    <div class="col-sm-10">
+                                        <!-- icon -->
+                                        <p class="card-text">Print details</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <!-- carrot icon -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="card" style="margin-bottom: 10px">
+                            <div class="card-body">
+                                <!-- Include the airluggage logo -->
+                                <h1 class="h3">Arriving early and need to securly store your luggage?</h1>
+                                <a href="info.html" class="btn btn-danger btn-block" style="margin-top: 20px; margin-bottom: 20px; background-color: #D33753">Reserve locker</a>
+                                <a class="card-text" style="text-decoration-line: underline" href="/info.html">Learn More</a>
+                            </div>
+
+                        </div>
+                        <div class="card" style="margin-bottom: 10px">
+                            <div class="card-body">
+                                <h1 class="h3">Reservation Details</h1>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <label><b>Who's coming</b></label>
+                                        <p class="card-text">7 guests</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        Here is where the profile pics will go
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <label><b>Confirmation code</b></label>
+                                        <p class="card-text">HMJMMFNDHR</p>
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <label>Your booking is protected by </label>
+                                        <!-- Include aircover logo -->
+                                        <a class="card-text" style="text-decoration-line: underline" href="/info.html">Learn More</a>
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <label><b>Cancellation policy</b> </label>
+                                        <p class="card-text">This reservation is non-refundable.</p>
+                                        <a class="card-text" style="text-decoration-line: underline" href="/info.html">Read More</a>
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <!-- icon -->
+                                        <p class="card-text">Delete event</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <!-- carrot icon -->
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <!-- icon -->
+                                        <p class="card-text">Get a PDF for visa purposes</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <!-- carrot icon -->
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <!-- icon -->
+                                        <p class="card-text">Print details</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <!-- carrot icon -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-bottom: 10px">
+                            <div class="card-body">
+                                <h1 class="h3">Where you're staying</h1>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <label><b>House rules</b></label>
+                                        <p class="card-text">7 guests maximum</p>
+                                        <p class="card-text">Pets allowed</p>
+                                        <p class="card-text">Self check-in with Keypad</p>
+                                        <a class="card-text" style="text-decoration-line: underline" href="/info.html">Show More</a>
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <!-- icon -->
+                                        <p class="card-text">Show listing</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <!-- carrot icon -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card" style="margin-bottom: 10px">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <h1 class="h3">Hosted by Ben and Brittany</h1>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img src="/images/ben-and-brittany.jpg" style="border-radius: 50%; height: 60px; width: 60px; margin-left: 90px;" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <label><b>About your host</b></label>
+                                        <p class="card-text">Hello there, folks traveling the beautiful midwest! With properties that have been featured by Airbnb itself, Only In Your State, and on various other noted travel websites, we are professional Airbnb hosts with...</p>
+                                        <a class="card-text" style="text-decoration-line: underline" href="/info.html">Show More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

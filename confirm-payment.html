@@ -30,11 +30,11 @@
     <div class="container-fluid" style="height:100vh">
         <nav class="bg-primaryX text-lightX navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
 
-            <div class="container">
+            <div class="container" style="background: white; box-shadow: 0px 5px 5px #D9D9D9; ">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html">
-                    Airbnb
+                <a class="navbar-brand" href="/itinery.html">
+                    <img src="/images/airbnb-logo.png" style="height: 65px; width: 100px;" />
                 </a>
 
                 <!-- Toggler -->
@@ -42,24 +42,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <!-- Currently the nav bar is hidden, and that's ok for now! I want to replace the brand section with a picture of their logo -->
                 <!-- Collapse -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
                     <!-- Links -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="#">Become a host</a>
+                            <a class="nav-link" style="color: black" href="#">Become a host</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Help</a>
+                            <a class="nav-link" style="color: black" href="#">Help</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Sign up</a>
+                            <a class="nav-link" style="color: black" href="#">Sign up</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" style="color: black" href="#">Login</a>
                         </li>
                     </ul>
 
@@ -70,7 +68,7 @@
         </nav>
 
 
-        <section class="section section-top section-full">
+        <section class="section section-top section-full" style="padding-top: 150px;">
 
             <!-- Cover -->
             <!-- Overlay -->
@@ -98,70 +96,177 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-7">
-                        <h1>This is the space where the infographics can go. We will have to align all of the infographics in this part of the row and then I will make the card slideable. </h1>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Create and include the airluggage logo! -->
-                                <h1 class="h3">Book homes, hotels, and more on Airbnb</h1>
-                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="row">
+                            <img src="/images/left-arrow-icon.png" style="width: 30px; height: 30px; margin-top: 3px" />
+                            <a href="/info.html">
+                                <h3 style="color: black; margin-bottom: 30px;">Confirm and pay</h3>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <h5 style="margin-bottom: 30px;"><b>Pay with</b></h5>
                                 <form>
-                                    <div class="form-group">
-                                        <label for="locationInput">WHERE</label>
-                                        <input type="email" class="form-control" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
-                                        <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>
-                                        <div class="container">
-                                            Start Date: <input id="startDate" width="276" />
-                                            End Date: <input id="endDate" width="276" />
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <select class="form-control" placeholder="Credit or debit card" style="margin-bottom: 20px;" id="payment">
+                                                <option>Credit</option>
+                                                <option>Debit</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <input class="form-control" style="margin-bottom: 20px;" placeholder="Card number" />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">ADULTS</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>1 adult</option>
-                                                    <option>2 adults</option>
-                                                    <option>3 adults</option>
-                                                    <option>4 adults</option>
-                                                    <option>5 adults</option>
-                                                    <option>6 adults</option>
-                                                    <option>7 adults</option>
-                                                    <option>8 adults</option>
-                                                    <option>9 adults</option>
-                                                    <option>10 adults</option>
-                                                    <option>11 adults</option>
-                                                    <option>12 adults</option>
-                                                    <option>13 adults</option>
-                                                    <option>14 adults</option>
-                                                    <option>15 adults</option>
-                                                    <option>16 adults</option>
-                                                </select>
-                                            </div>
+                                            <input class="form-control" style="margin-bottom: 20px;" placeholder="Expiration" />
                                         </div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control" placeholder="CVV" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <input class="form-control" style="margin-bottom: 20px;" placeholder="ZIP Code" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <select class="form-control" placeholder="Country/Region" style="margin-bottom: 20px;" id="payment">
+                                                <option>United States</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-11">
+                                            <input class="form-control" style="margin-bottom: 20px;" placeholder="Enter a coupon" />
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <h5 style="margin-bottom: 20px;"><b>Required for your locker reservation</b></h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <p class="card-text" style="margin-bottom: 20px;">Please enter a 5 digit code of your choosing as your locker key code. This code is one-time and will only be used for your locker(s). Only you will have access to this code. It is only active for the duration of your reservation and will expire 1 hour after you pick up your luggage.</p>
+                                        <input class="form-control" style="margin-bottom: 20px;" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <p class="card-text" style="margin-bottom: 20px;">Confirm your phone number to get reservation updates</p>
+                                        <input class="form-control" style="margin-bottom: 20px;" />
+                                    </div>
+                                </div>
+                                <hr class="solid" />
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <h5 style="margin-bottom: 20px;"><b>Cancellation Policy</b></h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <p class="card-text" style="margin-bottom: 20px;">This reservation is non-refundable.</p>
+                                        <p class="card-text" style="margin-bottom: 20px; text-decoration: underline;">Learn More.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <a href="/itinery-updated.html" class="btn btn-danger btn-block" style="background: #D33753; margin-bottom: 20px;">Confirm and Pay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="/images/airluggageLogo.png" style="width: 170px; height: 45px;" />
+                                <hr class="solid" />
+                                <div class="container form-group">
+                                    <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">CHILDREN</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>0 children</option>
-                                                    <option>1 child</option>
-                                                    <option>2 children</option>
-                                                    <option>3 children</option>
-                                                    <option>4 children</option>
-                                                    <option>5 children</option>
-                                                </select>
-                                            </div>
+                                            <label><b>Drop-Off Date</b></label>
+                                            <p class="card-text" style="margin-bottom: 10px;">05/25/23</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><b>Time</b></label>
+                                            <p class="card-text">10:00 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label><b>Pick-Up Date</b></label>
+                                            <p class="card-text">05/25/23</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><b>Time</b></label>
+                                            <p class="card-text" style="margin-bottom: 10px;">4:00 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <label><b>Luggage Facility</b></label>
+                                            <p class="card-text" style="margin-bottom: 10px;">123 Main Street, Minneapolis, MN 30298</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label><b>Lockers</b></label>
+                                            <p class="card-text" style="margin-bottom: 10px;">1</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="luggageSize"><b>Luggage Size</b></label>
+                                            <p class="card-text" style="margin-bottom: 10px;">Large</p>
+                                        </div>
+                                    </div>
+                                    <hr class="solid" />
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h4>1 lg locker x 6 hrs</h4>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h4>$24.00 USD</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h4 style="text-decoration: underline;">Service Fees</h4>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h4>$3.84 USD</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h4 style="text-decoration: underline;">Taxes</h4>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h4>$5.93 USD</h4>
+                                        </div>
+                                    </div>
+                                    <hr class="solid" />
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h4><b>Total (USD)</b></h4>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h4><b>$33.77</b></h4>
                                         </div>
                                     </div>
 
-                                </form>
-                                <a href="#" class="btn btn-danger btn-block">Search</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                     </div>
                 </div>
             </div>
         </section>
